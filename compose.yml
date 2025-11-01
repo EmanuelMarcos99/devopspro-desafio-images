@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  # Define o nome do nosso serviço 
+  pagina-institucional:
+
+    # Nome da imagem
+    image: rota42/pagina:latest
+
+    # Construção da imagem usando o diretorio atual
+    build: .
+    
+    # Mapeia a porta 
+    ports:
+      - "8080:80"
+      
+    # Sempre reiniciar o container desde que ele não seja parado manualmente
+    restart: unless-stopped
