@@ -1,0 +1,6 @@
+# Ignora  si mesmo e o Dockerfile
+Dockerfile
+.dockerignore
+
+# Ignora diretorios desnecessárias
+pagina/

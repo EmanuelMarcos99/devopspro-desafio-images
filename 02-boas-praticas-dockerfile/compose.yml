@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  app:
+    build: .
+    
+    # Define o nome do container
+    container_name: fastapi-app
+    
+    ports:
+      - "8000:8000"
+    
+    # Se o app cair, ele sobe de novo sozinho
+    restart: always
+    
