@@ -1,0 +1,15 @@
+services:
+  converter:
+    # Constrói a imagem usando o Dockerfile da pasta atual
+    build: .
+    image: rota42-converter:latest
+    container_name: video-processor
+    
+    # VOLUME (Essencial):
+    # Mapeia a pasta atual do seu PC (.) para a pasta /app do container.
+    volumes:
+      - .:/app
+
+    # --- COMO USAR ---
+    # Deixe a linha abaixo comentada para ver a ajuda (CMD padrão)
+    # command: ["video_teste.mp4", "avi"]

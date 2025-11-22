@@ -1,0 +1,6 @@
+# IGNORAR VÍDEOS 
+*.mp4
+*.avi
+
+# IGNORAR ARQUIVOS GERADOS 
+output*
